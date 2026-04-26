@@ -67,7 +67,7 @@ The program allows you to:
 * Paste this line:
 
 ```sh
-python3 dnd_character_sheet.py
+python3 main.py
 ```
 
 * The program interface will appear

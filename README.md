@@ -59,6 +59,7 @@ The program allows you to:
 * Calculate stats (HP and AC)
 * Save and load characters from files
 
+The program was initially developed as a single-file implementation and later refactored into a modular structure to improve readability, maintainability, and scalability.
 ---
 
 ### Running the Program
@@ -226,7 +227,7 @@ A character is composed of multiple smaller objects.
 
 ## Reading From File And Writing to File
 
-The program uses JSON files for storage.
+The program uses JSON files to store character data. The `CharacterFileManager` class handles file operations. The `save_to_file` method writes character data to a file, while `load_from_file` reads the data and reconstructs the object. JSON was chosen because it is easy to use and integrates well with Python dictionaries.
 
 ```python
 json.dump(character.to_dict(), file)
@@ -236,7 +237,7 @@ json.dump(character.to_dict(), file)
 data = json.load(file)
 ```
 
-This allows saving and loading characters.
+This allows persistent storage and retrieval of character data.
 
 ---
 

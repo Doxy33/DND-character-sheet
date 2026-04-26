@@ -1,14 +1,13 @@
 import os
 import unittest
 
-from dnd_character_sheet import (
-    AbilityScores,
-    Character,
-    CharacterClassFactory,
-    CharacterError,
-    CharacterFileManager,
-    Inventory,
-)
+from ability_scores import AbilityScores
+from character import Character
+from factory import CharacterClassFactory
+from errors import CharacterError
+from storage import CharacterFileManager
+from inventory import Inventory
+
 
 
 class TestAbilityScores(unittest.TestCase):
